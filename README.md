@@ -18,6 +18,23 @@ It simulates a panel of virtual experts (Coach, Fitness Trainer, Nutritionist, P
 
 ---
 
+## Pipeline Flow
+
+- User Query → “Show me Virat Kohli’s performance in World Cup 2019.”
+
+- LangChain Agent chooses the correct tool:
+
+- For stats → player_stats
+
+- For match summaries → match_lookup
+
+- For practice tips → training_tool
+
+- Tools Fetch Data (JSON / Vector DB)
+
+- LLM Summarizes results into natural language.
+
+- Streamlit UI shows final analysis.
 
 ---
 
